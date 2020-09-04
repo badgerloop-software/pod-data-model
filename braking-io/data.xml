@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data endian='big' id='braking-io'>
+    <value id='busV'      name='Bus Voltage'        type='uint16_t'>
+    <value id='busA'      name='Bus Current'        type='uint16_t'>
+    <value id='v5RailV'   name='5 V Rail Voltage'   type='uint16_t'>
+    <value id='v5RailA'   name='5 V Rail Current'   type='uint16_t'>
+    <value id='v7RailV'   name='7 V Rail Voltage'   type='uint16_t'>
+    <value id='v7RailA'   name='7 V Rail Current'   type='uint16_t'>
+    <value id='therm1'    name='Thermistor 1'       type='uint16_t'>
+    <value id='therm2'    name='Thermistor 2'       type='uint16_t'>
+    <value id='pressure0' name='Pressure 0'         type='uint16_t'>
+    <value id='pressure1' name='Pressure 1'         type='uint16_t'>
+    <value id='pressure2' name='Pressure 2'         type='uint16_t'>
+    <value id='pressure3' name='Pressure 3'         type='uint16_t'>
+    <value id='pressure4' name='Pressure 4'         type='uint16_t'>
+    <value id='pressure5' name='Pressure 5'         type='uint16_t'>
+    <value id='pressure6' name='Pressure 6'         type='uint16_t'>
+    <value id='pressure7' name='Pressure 7'         type='uint16_t'>
+</data>

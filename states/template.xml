@@ -1,0 +1,95 @@
+<-!--> Fill in the limits for the state you are adding and remove this header </--!->
+<?xml version="1.0" encoding="UTF-8"?>
+<struct id="data">
+    <field id="state" name={/* ADD */}/>
+	<struct id="pressure">
+        <value id="primTank" upper={/* ADD */} lower={/* ADD */}/>
+		<field id="primLine" upper={/* ADD */} lower={/* ADD */}/>
+		<field id="primAct" upper={/* ADD */} lower={/* ADD */}/>
+		<field id="secTank" upper={/* ADD */} lower={/* ADD */}/>
+		<field id="secLine" upper={/* ADD */} lower={/* ADD */} />
+		<field id="secAct" upper={/* ADD */} lower={/* ADD */} />
+		<field id="amb" upper={/* ADD */} lower={/* ADD */} />
+		<field id="pv"  upper={/* ADD */} lower={/* ADD */}/>
+	</struct>
+	<struct pointer="true" id="motion" init="initMotionData" comment="Where all motion data goes. X-positive direction is assumed. All values should be assumed to be metric.">
+		<field id="pos" upper={/* ADD */} lower={/* ADD */} />
+		<field id="vel" upper={/* ADD */} lower={/* ADD */} />
+		<field id="accel" upper={/* ADD */} lower={/* ADD */} />
+		<field id="retroCount" upper={/* ADD */} lower={/* ADD */} />
+		<field id="missedRetro" upper={/* ADD */} lower={/* ADD */} />
+	</struct>
+	<struct pointer="true" id="bms" init="initBmsData" comment="Data collected about the battery system">
+		<field id="packCurrent" upper={/* ADD */} lower={/* ADD */} />
+		<field id="packVoltage" upper={/* ADD */} lower={/* ADD */} />
+		<field id="imdStatus" upper={/* ADD */} lower={/* ADD */} />
+		<field id="packDCL" upper={/* ADD */} lower={/* ADD */} />
+		<field id="packCCL" upper={/* ADD */} lower={/* ADD */} />
+		<field id="packResistance" upper={/* ADD */} lower={/* ADD */} />
+		<field id="packHealth" upper={/* ADD */} lower={/* ADD */} />
+		<field id="packOpenVoltage" upper={/* ADD */} lower={/* ADD */} />
+		<field id="packCycles" upper={/* ADD */} lower={/* ADD */} />
+		<field id="packAh" upper={/* ADD */} lower={/* ADD */} />
+		<field id="inputVoltage" upper={/* ADD */} lower={/* ADD */} />
+		<field id="Soc" upper={/* ADD */} lower={/* ADD */} />
+		<field id="relayStatus" upper={/* ADD */} lower={/* ADD */} />
+		<field id="highTemp" upper={/* ADD */} lower={/* ADD */} />
+		<field id="lowTemp" upper={/* ADD */} lower={/* ADD */} />
+		<field id="avgTemp" upper={/* ADD */} lower={/* ADD */} />
+		<field id="cellMaxVoltage" upper={/* ADD */} lower={/* ADD */} />
+		<field id="cellMinVoltage" upper={/* ADD */} lower={/* ADD */} />
+		<field id="cellAvgVoltage" upper={/* ADD */} lower={/* ADD */} />
+		<field id="maxCells" upper={/* ADD */} lower={/* ADD */} />
+		<field id="numCells" upper={/* ADD */} lower={/* ADD */} />
+	</struct>
+	<struct pointer="true" id="rms" init="initRmsData" comment="Collection of all the RMS (motor controller) data">
+		<field id="igbtTemp" upper={/* ADD */} lower={/* ADD */} />
+		<field id="gateDriverBoardTemp" upper={/* ADD */} lower={/* ADD */} />
+		<field id="controlBoardTemp" upper={/* ADD */} lower={/* ADD */} />
+		<field id="motorTemp" upper={/* ADD */} lower={/* ADD */} />
+		<field id="motorSpeed" upper={/* ADD */} lower={/* ADD */} />
+		<field id="phaseACurrent" upper={/* ADD */} lower={/* ADD */} />
+		<field id="phaseBCurrent" upper={/* ADD */} lower={/* ADD */} />
+		<field id="phaseCCurrent" upper={/* ADD */} lower={/* ADD */} />
+		<field id="dcBusVoltage" upper={/* ADD */} lower={/* ADD */} />
+		<!-- <field id="output_voltage_peak" /> -->
+		<field id="lvVoltage" upper={/* ADD */} lower={/* ADD */} />
+		<field id="canCode1" upper={/* ADD */} lower={/* ADD */} />
+		<field id="canCode2" upper={/* ADD */} lower={/* ADD */} />
+		<field id="faultCode1" upper={/* ADD */} lower={/* ADD */} />
+		<field id="faultCode2" upper={/* ADD */} lower={/* ADD */} />
+		<field id="commandedTorque" upper={/* ADD */} lower={/* ADD */} />
+		<field id="actualTorque" upper={/* ADD */} lower={/* ADD */} />
+		<field id="relayState" upper={/* ADD */} lower={/* ADD */} />
+		<field id="electricalFreq" upper={/* ADD */} lower={/* ADD */} />
+		<field id="dcBusCurrent" upper={/* ADD */} lower={/* ADD */} />
+		<field id="outputVoltageLn" upper={/* ADD */} lower={/* ADD */} />
+		<field id="VSMCode" upper={/* ADD */} lower={/* ADD */} />
+		<field id="keyMode" upper={/* ADD */} lower={/* ADD */} />
+	</struct>
+	<struct pointer="true" id="flags" init="initFlagData" comment="Where information about the flags is held.">
+		<field id="readyPump" upper={/* ADD */} lower={/* ADD */} />
+		<field id="pumpDown" upper={/* ADD */} lower={/* ADD */} />
+		<field id="readyCommand" upper={/* ADD */} lower={/* ADD */} />
+		<field id="readyToBrake" upper={/* ADD */} lower={/* ADD */} />
+		<field id="propulse" upper={/* ADD */} lower={/* ADD */} />
+		<field id="emergencyBrake" upper={/* ADD */} lower={/* ADD */} />
+		<field id="shouldStop" upper={/* ADD */} lower={/* ADD */} />
+		<field id="shutdown" upper={/* ADD */} lower={/* ADD */} />
+		<field id="shouldBrake" upper={/* ADD */} lower={/* ADD */} />
+		<field id="isConnected" upper={/* ADD */} lower={/* ADD */} />
+		<field id="brakeInit" upper={/* ADD */} lower={/* ADD */} />
+		<field id="brakePrimAct" upper={/* ADD */} lower={/* ADD */} />
+		<field id="brakeSecAct" upper={/* ADD */} lower={/* ADD */} />
+		<field id="brakePrimRetr" upper={/* ADD */} lower={/* ADD */} />
+		<field id="brakeSecRetr" upper={/* ADD */} lower={/* ADD */} />
+		<field id="clrMotionData" upper={/* ADD */} lower={/* ADD */} />
+	</struct>
+	<struct pointer="true" id="timers" init="initTimerData" comment="For making sure that our run happens in a timely manner">
+		<field id="startTime" upper={/* ADD */} lower={/* ADD */}/>
+		<field id="oldRetro" upper={/* ADD */} lower={/* ADD */} />
+		<field id="lastRetro" upper={/* ADD */} lower={/* ADD */} />
+		<field id="lastRetros" upper={/* ADD */} lower={/* ADD */} />
+		<field id="crawlTimer" upper={/* ADD */} lower={/* ADD */} />
+	</struct>
+</struct>
